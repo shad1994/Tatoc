@@ -5,9 +5,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -137,16 +139,11 @@ public class OpenBasicTatocTest {
 	@Test(priority = 5)
 	public void proceedPassTest() throws InterruptedException {
 		driver.switchTo().frame("main");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		while (!box2_color.equals(box1_color)) {
 
-			// Thread.sleep(1000);
-
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("//center//a[contains(text(),'Repaint Box 2')]")));
 			driver.findElement(By.xpath("//center//a[contains(text(),'Repaint Box 2')]")).click();
 			System.out.println(box1_color + " " + box2_color);
-			// driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
 			box1_color = driver.findElement(By.xpath("//div[@id='answer'][contains(text(),'Box 1')]"))
 					.getAttribute("class");
@@ -157,8 +154,7 @@ public class OpenBasicTatocTest {
 
 		}
 		System.out.println(box1_color + " " + box2_color);
-		// driver.switchTo().parentFrame();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		driver.findElement(By.xpath("//center/a[contains(text(),'Proceed')]")).click();
 		assertThat(driver.getCurrentUrl()).isEqualTo("http://10.0.1.86/tatoc/basic/drag");
 		driver.switchTo().defaultContent();
@@ -208,45 +204,69 @@ public class OpenBasicTatocTest {
 	public void submitNameFailtest() {
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 		System.out.println(tabs2.size());
-		driver.switchTo().window(tabs2.get(tabs2.size() - 1));
-		// System.out.println(driver.findElement(By.id("submit")).getAttribute("onclick"));
-		 System.out.println("switch");
 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("submit")));
-			
-		 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name")));
-			driver.findElement(By.id("name")).sendKeys("Shadab Sayeed");
-			
-		 driver.findElement(By.id("submit")).click();
-		 
-			 System.out.println("submit");
+		System.out.println("switch");
 
-	
+		driver.switchTo().window(tabs2.get(1));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("submit")));
+		driver.findElement(By.id("submit")).click();
 
-		// driver.switchTo().window(tabs2.get(0));
-		// System.out.println("switch back");
-		// driver.switchTo().window(tabs2.get(0));
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/a[contains(text(),'Proceed')]")));
-		// System.out.println("proceed");
-		// driver.findElement(By.xpath("//div/a[contains(text(),'Proceed')]")).click();
-		// assertThat(driver.getCurrentUrl()).isEqualTo("http://10.0.1.86/tatoc/error");
-		// driver.navigate().back();
+		System.out.println("submit");
+
+		driver.switchTo().window(tabs2.get(0));
+		System.out.println("switch back");
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/a[contains(text(),'Proceed')]")));
+
+		driver.findElement(By.xpath("//div/a[contains(text(),'Proceed')]")).click();
+		System.out.println("proceed");
+		assertThat(driver.getCurrentUrl()).isEqualTo("http://10.0.1.86/tatoc/error");
+		driver.navigate().back();
 	}
 
-	/*@Test(priority = 10)
+	@Test(priority = 10)
 	public void submitNameTest() {
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//div/a[contains(text(),'Launch Popup Window')]")));
 		driver.findElement(By.xpath("//div/a[contains(text(),'Launch Popup Window')]")).click();
-	
+
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		System.out.println(tabs2.size());
+		driver.switchTo().window(tabs2.get(1));
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name")));
 		driver.findElement(By.id("name")).sendKeys("Shadab Sayeed");
 		driver.findElement(By.id("submit")).click();
+		driver.switchTo().window(tabs2.get(0));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/a[contains(text(),'Proceed')]")));
 		driver.findElement(By.xpath("//div/a[contains(text(),'Proceed')]")).click();
-		assertThat(driver.getCurrentUrl()).isEqualTo("10.0.1.86/tatoc/basic/cookie");
-	
+		assertThat(driver.getCurrentUrl()).isEqualTo("http://10.0.1.86/tatoc/basic/cookie");
+
 	}
-	*/
+
+	@Test(priority = 11)
+	public void generateToken() throws InterruptedException {
+
+		wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/a[contains(text(),'Generate Token')]")));
+		driver.findElement(By.xpath("//div/a[contains(text(),'Generate Token')]")).click();
+
+		assertThat(driver.getCurrentUrl()).isEqualTo("http://10.0.1.86/tatoc/basic/cookie#");
+
+		String token = driver.findElement(By.xpath("//div/span[@id='token']")).getText();
+		String[] parts = token.split(" ");
+		System.out.println(parts[1]);
+		Cookie name = new Cookie("Token", parts[1]);
+		driver.manage().addCookie(name);
+		System.out.println("set cockie");
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/a[contains(text(),'Proceed')]")));
+		driver.findElement(By.xpath("//div/a[contains(text(),'Proceed')]")).click();
+
+		assertThat(driver.getCurrentUrl()).isEqualTo("http://10.0.1.86/tatoc/end");
+		assertThat(driver.findElement(By.xpath("//div/span[@class='finish']")).getText())
+				.isEqualTo("Obstacle Course is Complete!");
+		System.out.println("COMPLETE");
+	}
+
 }
