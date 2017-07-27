@@ -3,7 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="Test.AdvanceTatoc.HoverMenuTest"/>
+      <class name="Test.AdvanceTatoc.RestfulApiTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Test.AdvanceTatoc.RestfulApiTest">
+        <methods>
+          <include name="restfulTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- Test.AdvanceTatoc.RestfulApiTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

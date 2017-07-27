@@ -2,36 +2,60 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4720" started-at="2017-07-26T12:25:25Z" finished-at="2017-07-26T12:25:30Z">
+  <suite name="suite1" duration-ms="9011" started-at="2017-07-27T05:21:37Z" finished-at="2017-07-27T05:21:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4720" started-at="2017-07-26T12:25:25Z" finished-at="2017-07-26T12:25:30Z">
-      <class name="Test.AdvanceTatoc.HoverMenuTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.HoverMenuTest@14acaea5]" name="launchBrowser" is-config="true" duration-ms="1037" started-at="2017-07-26T17:55:25Z" finished-at="2017-07-26T17:55:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="hoverMenuTest()[pri:1, instance:Test.AdvanceTatoc.HoverMenuTest@14acaea5]" name="hoverMenuTest" duration-ms="1254" started-at="2017-07-26T17:55:26Z" finished-at="2017-07-26T17:55:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hoverMenuTest -->
-        <test-method status="PASS" signature="queryGateTest()[pri:2, instance:Test.AdvanceTatoc.HoverMenuTest@14acaea5]" name="queryGateTest" duration-ms="1146" started-at="2017-07-26T17:55:27Z" finished-at="2017-07-26T17:55:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queryGateTest -->
-        <test-method status="PASS" signature="OoyalaTest()[pri:3, instance:Test.AdvanceTatoc.HoverMenuTest@14acaea5]" name="OoyalaTest" duration-ms="1" started-at="2017-07-26T17:55:28Z" finished-at="2017-07-26T17:55:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OoyalaTest -->
-        <test-method status="PASS" signature="restfulTest()[pri:4, instance:Test.AdvanceTatoc.HoverMenuTest@14acaea5]" name="restfulTest" duration-ms="243" started-at="2017-07-26T17:55:28Z" finished-at="2017-07-26T17:55:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- restfulTest -->
-        <test-method status="PASS" signature="fileHandleTest()[pri:5, instance:Test.AdvanceTatoc.HoverMenuTest@14acaea5]" name="fileHandleTest" duration-ms="1022" started-at="2017-07-26T17:55:29Z" finished-at="2017-07-26T17:55:30Z">
+    <test name="test" duration-ms="9011" started-at="2017-07-27T05:21:37Z" finished-at="2017-07-27T05:21:46Z">
+      <class name="Test.AdvanceTatoc.DownloadFileTest">
+        <test-method status="PASS" signature="fileHandleTest()[pri:0, instance:Test.AdvanceTatoc.DownloadFileTest@224edc67]" name="fileHandleTest" duration-ms="2431" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileHandleTest -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.DownloadFileTest@224edc67]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+      </class> <!-- Test.AdvanceTatoc.DownloadFileTest -->
+      <class name="Test.AdvanceTatoc.QuerygateTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.QuerygateTest@1d057a39]" name="launchBrowser" is-config="true" duration-ms="1" started-at="2017-07-27T10:51:40Z" finished-at="2017-07-27T10:51:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="queryGateTest()[pri:0, instance:Test.AdvanceTatoc.QuerygateTest@1d057a39]" name="queryGateTest" duration-ms="3571" started-at="2017-07-27T10:51:40Z" finished-at="2017-07-27T10:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queryGateTest -->
+      </class> <!-- Test.AdvanceTatoc.QuerygateTest -->
+      <class name="Test.AdvanceTatoc.RestfulApiTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.RestfulApiTest@4c70fda8]" name="launchBrowser" is-config="true" duration-ms="4" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="restfulTest()[pri:0, instance:Test.AdvanceTatoc.RestfulApiTest@4c70fda8]" name="restfulTest" duration-ms="273" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restfulTest -->
+      </class> <!-- Test.AdvanceTatoc.RestfulApiTest -->
+      <class name="Test.AdvanceTatoc.VideoPlayerTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.VideoPlayerTest@26be92ad]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="OoyalaTest()[pri:0, instance:Test.AdvanceTatoc.VideoPlayerTest@26be92ad]" name="OoyalaTest" duration-ms="5" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OoyalaTest -->
+      </class> <!-- Test.AdvanceTatoc.VideoPlayerTest -->
+      <class name="Test.AdvanceTatoc.HoverMenuTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.HoverMenuTest@475530b9]" name="launchBrowser" is-config="true" duration-ms="1191" started-at="2017-07-27T10:51:37Z" finished-at="2017-07-27T10:51:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="hoverMenuTest()[pri:0, instance:Test.AdvanceTatoc.HoverMenuTest@475530b9]" name="hoverMenuTest" duration-ms="1516" started-at="2017-07-27T10:51:39Z" finished-at="2017-07-27T10:51:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverMenuTest -->
       </class> <!-- Test.AdvanceTatoc.HoverMenuTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- test -->
+  </suite> <!-- suite1 -->
 </testng-results>

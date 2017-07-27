@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1" verbose="1">
+	<test name="test" preserve-order="true">
+		<classes>
+
+			<class name="Test.AdvanceTatoc.HoverMenuTest" />
+			<class name="Test.AdvanceTatoc.QuerygateTest" />
+			<class name="Test.AdvanceTatoc.VideoPlayerTest" />
+			<class name="Test.AdvanceTatoc.RestfulApiTest" />
+			<class name="Test.AdvanceTatoc.DownloadFileTest" />
+
+
+
+		</classes>
+	</test>
+</suite>

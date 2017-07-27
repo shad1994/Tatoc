@@ -1,4 +1,4 @@
-package Test.AdvanceTatoc;
+package UtilityClasses;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,6 +9,11 @@ import java.sql.Statement;
 import com.mysql.jdbc.ResultSetMetaData;
 
 public class DBAccess {
+	
+	/*public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		DBAccess db=new DBAccess();
+		db.printTables();
+	}*/
 
 	public String findValue(String selectValue, String tableName, String whereCol, String whereColValue)
 			throws ClassNotFoundException, SQLException {

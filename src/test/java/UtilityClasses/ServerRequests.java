@@ -1,4 +1,4 @@
-package Test.AdvanceTatoc;
+package UtilityClasses;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,10 +17,10 @@ import java.util.List;
 
 import org.apache.http.NameValuePair;
 
-public class requests {
+public class ServerRequests {
 
 	// HTTP GET request
-	public String sendGet(String url) throws Exception {
+	public String getRequest(String url) throws Exception {
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -55,8 +55,7 @@ public class requests {
 	}
 
 	// HTTP POST request
-
-	public String sendPost(String url, List param) throws Exception {
+	public String postRequest(String url, List param) throws Exception {
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -115,7 +114,7 @@ public class requests {
 	    return result.toString();
 	}
 
-	public String putrequest(String url, String data) throws IOException {
+	public String putRequest(String url, String data) throws IOException {
 		URL url1 = new URL(url);
 		HttpURLConnection httpCon = (HttpURLConnection) url1.openConnection();
 		httpCon.setDoOutput(true);
