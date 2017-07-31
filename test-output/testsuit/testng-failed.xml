@@ -3,24 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [testsuit]">
   <test name="test">
     <classes>
-      <class name="Test.BasicTatoc.OpenBasicTatocTest"/>
+      <class name="Test.BasicTatoc.GridTest"/>
       <class name="Test.BasicTatoc.DungeonTest"/>
+      <class name="Test.BasicTatoc.DragAndDropTest"/>
+      <class name="Test.BasicTatoc.PopupWindowTest"/>
+      <class name="Test.BasicTatoc.GenerateTokenTest"/>
     </classes>
   </test> <!-- test -->
-  <test name="test(failed)">
-    <classes>
-      <class name="Test.BasicTatoc.OpenBasicTatocTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="redGridTest"/>
-        </methods>
-      </class> <!-- Test.BasicTatoc.OpenBasicTatocTest -->
-      <class name="Test.BasicTatoc.DungeonTest">
-        <methods>
-          <include name="repaintSecondBoxtest"/>
-          <include name="getDriverinstance"/>
-        </methods>
-      </class> <!-- Test.BasicTatoc.DungeonTest -->
-    </classes>
-  </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [testsuit] -->

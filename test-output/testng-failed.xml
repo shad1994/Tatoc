@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testsuit]">
   <test name="test">
     <classes>
-      <class name="Test.AdvanceTatoc.HoverMenuTest"/>
-      <class name="Test.AdvanceTatoc.QuerygateTest"/>
-      <class name="Test.AdvanceTatoc.VideoPlayerTest"/>
-      <class name="Test.AdvanceTatoc.RestfulApiTest"/>
-      <class name="Test.AdvanceTatoc.DownloadFileTest"/>
+      <class name="Test.BasicTatoc.GridTest"/>
+      <class name="Test.BasicTatoc.DungeonTest"/>
+      <class name="Test.BasicTatoc.DragAndDropTest"/>
+      <class name="Test.BasicTatoc.PopupWindowTest"/>
+      <class name="Test.BasicTatoc.GenerateTokenTest"/>
     </classes>
   </test> <!-- test -->
-</suite> <!-- Failed suite [suite1] -->
+</suite> <!-- Failed suite [testsuit] -->

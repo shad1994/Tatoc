@@ -1,61 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="suite1" duration-ms="9011" started-at="2017-07-27T05:21:37Z" finished-at="2017-07-27T05:21:46Z">
+  <suite name="testsuit" duration-ms="5407" started-at="2017-07-31T04:57:00Z" finished-at="2017-07-31T04:57:06Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="9011" started-at="2017-07-27T05:21:37Z" finished-at="2017-07-27T05:21:46Z">
-      <class name="Test.AdvanceTatoc.DownloadFileTest">
-        <test-method status="PASS" signature="fileHandleTest()[pri:0, instance:Test.AdvanceTatoc.DownloadFileTest@224edc67]" name="fileHandleTest" duration-ms="2431" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fileHandleTest -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.DownloadFileTest@224edc67]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+    <test name="test" duration-ms="5407" started-at="2017-07-31T04:57:00Z" finished-at="2017-07-31T04:57:06Z">
+      <class name="Test.BasicTatoc.GenerateTokenTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.BasicTatoc.GenerateTokenTest@4c70fda8]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-31T10:27:05Z" finished-at="2017-07-31T10:27:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-      </class> <!-- Test.AdvanceTatoc.DownloadFileTest -->
-      <class name="Test.AdvanceTatoc.QuerygateTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.QuerygateTest@1d057a39]" name="launchBrowser" is-config="true" duration-ms="1" started-at="2017-07-27T10:51:40Z" finished-at="2017-07-27T10:51:40Z">
+        <test-method status="PASS" signature="generateToken()[pri:0, instance:Test.BasicTatoc.GenerateTokenTest@4c70fda8]" name="generateToken" duration-ms="331" started-at="2017-07-31T10:27:05Z" finished-at="2017-07-31T10:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateToken -->
+      </class> <!-- Test.BasicTatoc.GenerateTokenTest -->
+      <class name="Test.BasicTatoc.DragAndDropTest">
+        <test-method status="PASS" signature="dragAndDropFailTest()[pri:1, instance:Test.BasicTatoc.DragAndDropTest@1d057a39]" name="dragAndDropFailTest" duration-ms="161" started-at="2017-07-31T10:27:04Z" finished-at="2017-07-31T10:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropFailTest -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.BasicTatoc.DragAndDropTest@1d057a39]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-31T10:27:04Z" finished-at="2017-07-31T10:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="queryGateTest()[pri:0, instance:Test.AdvanceTatoc.QuerygateTest@1d057a39]" name="queryGateTest" duration-ms="3571" started-at="2017-07-27T10:51:40Z" finished-at="2017-07-27T10:51:44Z">
+        <test-method status="PASS" signature="dragAndDropTest()[pri:2, instance:Test.BasicTatoc.DragAndDropTest@1d057a39]" name="dragAndDropTest" duration-ms="235" started-at="2017-07-31T10:27:04Z" finished-at="2017-07-31T10:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queryGateTest -->
-      </class> <!-- Test.AdvanceTatoc.QuerygateTest -->
-      <class name="Test.AdvanceTatoc.RestfulApiTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.RestfulApiTest@4c70fda8]" name="launchBrowser" is-config="true" duration-ms="4" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="restfulTest()[pri:0, instance:Test.AdvanceTatoc.RestfulApiTest@4c70fda8]" name="restfulTest" duration-ms="273" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- restfulTest -->
-      </class> <!-- Test.AdvanceTatoc.RestfulApiTest -->
-      <class name="Test.AdvanceTatoc.VideoPlayerTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.VideoPlayerTest@26be92ad]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+        </test-method> <!-- dragAndDropTest -->
+      </class> <!-- Test.BasicTatoc.DragAndDropTest -->
+      <class name="Test.BasicTatoc.DungeonTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.BasicTatoc.DungeonTest@475530b9]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-31T10:27:03Z" finished-at="2017-07-31T10:27:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="OoyalaTest()[pri:0, instance:Test.AdvanceTatoc.VideoPlayerTest@26be92ad]" name="OoyalaTest" duration-ms="5" started-at="2017-07-27T10:51:44Z" finished-at="2017-07-27T10:51:44Z">
+        <test-method status="PASS" signature="repaintSecondBoxtest()[pri:1, instance:Test.BasicTatoc.DungeonTest@475530b9]" name="repaintSecondBoxtest" duration-ms="294" started-at="2017-07-31T10:27:03Z" finished-at="2017-07-31T10:27:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OoyalaTest -->
-      </class> <!-- Test.AdvanceTatoc.VideoPlayerTest -->
-      <class name="Test.AdvanceTatoc.HoverMenuTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.AdvanceTatoc.HoverMenuTest@475530b9]" name="launchBrowser" is-config="true" duration-ms="1191" started-at="2017-07-27T10:51:37Z" finished-at="2017-07-27T10:51:39Z">
+        </test-method> <!-- repaintSecondBoxtest -->
+        <test-method status="PASS" signature="proceedFailTest()[pri:2, instance:Test.BasicTatoc.DungeonTest@475530b9]" name="proceedFailTest" duration-ms="239" started-at="2017-07-31T10:27:03Z" finished-at="2017-07-31T10:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedFailTest -->
+        <test-method status="PASS" signature="proceedPassTest()[pri:3, instance:Test.BasicTatoc.DungeonTest@475530b9]" name="proceedPassTest" duration-ms="328" started-at="2017-07-31T10:27:04Z" finished-at="2017-07-31T10:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedPassTest -->
+      </class> <!-- Test.BasicTatoc.DungeonTest -->
+      <class name="Test.BasicTatoc.GridTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.BasicTatoc.GridTest@2b98378d]" name="launchBrowser" is-config="true" duration-ms="1150" started-at="2017-07-31T10:27:00Z" finished-at="2017-07-31T10:27:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="hoverMenuTest()[pri:0, instance:Test.AdvanceTatoc.HoverMenuTest@475530b9]" name="hoverMenuTest" duration-ms="1516" started-at="2017-07-27T10:51:39Z" finished-at="2017-07-27T10:51:40Z">
+        <test-method status="PASS" signature="greenGridTest()[pri:1, instance:Test.BasicTatoc.GridTest@2b98378d]" name="greenGridTest" duration-ms="1363" started-at="2017-07-31T10:27:01Z" finished-at="2017-07-31T10:27:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hoverMenuTest -->
-      </class> <!-- Test.AdvanceTatoc.HoverMenuTest -->
+        </test-method> <!-- greenGridTest -->
+        <test-method status="PASS" signature="redGridTest()[pri:2, instance:Test.BasicTatoc.GridTest@2b98378d]" name="redGridTest" duration-ms="347" started-at="2017-07-31T10:27:03Z" finished-at="2017-07-31T10:27:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redGridTest -->
+      </class> <!-- Test.BasicTatoc.GridTest -->
+      <class name="Test.BasicTatoc.PopupWindowTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.BasicTatoc.PopupWindowTest@26be92ad]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2017-07-31T10:27:04Z" finished-at="2017-07-31T10:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="launchPopupWindowTest()[pri:0, instance:Test.BasicTatoc.PopupWindowTest@26be92ad]" name="launchPopupWindowTest" duration-ms="118" started-at="2017-07-31T10:27:04Z" finished-at="2017-07-31T10:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPopupWindowTest -->
+        <test-method status="PASS" signature="submitNameFailtest()[pri:9, instance:Test.BasicTatoc.PopupWindowTest@26be92ad]" name="submitNameFailtest" duration-ms="316" started-at="2017-07-31T10:27:05Z" finished-at="2017-07-31T10:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitNameFailtest -->
+        <test-method status="PASS" signature="submitNameTest()[pri:10, instance:Test.BasicTatoc.PopupWindowTest@26be92ad]" name="submitNameTest" duration-ms="497" started-at="2017-07-31T10:27:05Z" finished-at="2017-07-31T10:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitNameTest -->
+      </class> <!-- Test.BasicTatoc.PopupWindowTest -->
     </test> <!-- test -->
-  </suite> <!-- suite1 -->
+  </suite> <!-- testsuit -->
 </testng-results>

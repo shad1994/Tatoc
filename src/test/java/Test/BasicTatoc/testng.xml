@@ -4,10 +4,13 @@
 	<test name="test" preserve-order="true">
 		<classes>
 
-			<class name="Test.BasicTatoc.OpenBasicTatocTest" />
+			<class name="Test.BasicTatoc.GridTest" />
 			<class name="Test.BasicTatoc.DungeonTest" />
-
-
+			<class name="Test.BasicTatoc.DragAndDropTest" />
+			
+			<class name="Test.BasicTatoc.PopupWindowTest" />
+			
+			<class name="Test.BasicTatoc.GenerateTokenTest" />
 
 		</classes>
 	</test>
